@@ -41,7 +41,7 @@ const Input = observer(() => {
                                             <a href={repository.owner.html_url}>{repository.full_name}</a>
                                             <span>Stars: {repository.stargazers_count}</span>
                                             <span>Forks: {repository.forks_count}</span>
-                                            <NavLink to={`/repositories/${repository.full_name}`} onClick={(event) => event.stopPropagation()} className={styles.repositoryButton}>more details</NavLink>
+                                            <NavLink to={`/GitHubSearch/repositories/${repository.full_name}`} onClick={(event) => event.stopPropagation()} className={styles.repositoryButton}>more details</NavLink>
                                         </li>
                                     ))}
                                     </ul>

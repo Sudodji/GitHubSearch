@@ -40,7 +40,7 @@ const RepoPage = observer(() => {
                     )}
                 </>
             ) : <h3>Error</h3>}
-            <NavLink to={ `/` } className={styles.backButton}>Back</NavLink>
+            <NavLink to={ `/GitHubSearch` } className={styles.backButton}>Back</NavLink>
         </>
     )
 })
