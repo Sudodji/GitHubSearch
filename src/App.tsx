@@ -11,14 +11,14 @@ const App = () => {
     <>
       <h1>GitHub Repos</h1>
       <Routes>
-        <Route path="/" element={
+        <Route path="/GitHubSearch" element={
           <div className="container"> 
             <Input />
             <CopyButton textToCopy='Just text'/>
             <Favorites />
           </div>
         }/>
-        <Route path="/repositories/*" element={<RepoPage />} />
+        <Route path="/GitHubSearch/repositories/*" element={<RepoPage />} />
       </Routes>
     </>
   );
