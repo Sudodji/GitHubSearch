@@ -1,25 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import './index.css';
+import Input from './components/Input/Input';
+import RepoPage from './components/RepoPage/RepoPage';
+import Favorites from './components/Favorites/Favorites';
+import CopyButton from './components/CopyButton/CopyButton';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1>GitHub Repos</h1>
+      <Routes>
+        <Route path="/" element={
+          <div className="container"> 
+            <Input />
+            <CopyButton textToCopy='Just text'/>
+            <Favorites />
+          </div>
+        }/>
+        <Route path="/repositories/*" element={<RepoPage />} />
+      </Routes>
+    </>
   );
 }
 

@@ -1,0 +1,11 @@
+.copyButton {
+    background-color: #fff;
+    padding: 20px;
+    align-self: flex-start;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border: none;
+    font-size: 15px;
+    margin-left: 15px;
+    cursor: pointer;
+}
